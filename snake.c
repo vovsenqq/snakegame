@@ -9,7 +9,6 @@
 #include <time.h>
 #include <termios.h>
 #include <unistd.h>
-#include <ncurses.h>
 #include <fcntl.h>
 
 #define width 70
