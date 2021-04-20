@@ -165,8 +165,8 @@ void GameOver() {
     usleep(5000);
     system("clear");
     for (i = 0; i < 5; i++) {
-    int zxcasd = results[i];
-    printf("%d.%s  %d                                                             \n", i, userName, zxcasd);
+      int zxcasd = results[i];
+      printf("%d.%s  %d                                                             \n", i + 1, userName, zxcasd);
     }
     printf("\n\n         Game over\n");
     printf("             Score : %d \n\n", currentScore);
@@ -282,6 +282,7 @@ void resetCursorPosition() {
 }
 
 void main() {
+    system("resize -s 30 130");
     beforeGameStart();
     gameInitialization();
 
